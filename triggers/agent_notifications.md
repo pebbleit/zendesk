@@ -1,12 +1,12 @@
-# Zendesk trigger notifications (inbound to pebble.it)
+# Agent notifications
 
-A list of email nofitications an Agent might receive from **pebble.it help!**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
+A list of email nofitications an Agent might receive from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
 
 ## New tickets
 
 ### Notify group of assignment
 
-Most likely the first email notification Agents see for a new ticket (client Organisations are mapped to a Group, usually Support).
+Most likely the first email notification Agents see for a new ticket (client Organisations are mapped to a Group, usually Support). Each Agent in the Group recieves a copy of this notice.
 
 Email subject:
 
