@@ -2,7 +2,19 @@
 
 A list of email nofitications Foration might receive from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
 
-The Foration Zendesk `Agent` has the email address pebble@foration.com – all Zendesk notifications are sent to this address.
+The Foration Zendesk `Agent` has the email address [pebble@foration.com](mailto:pebbleit@foration.com) – all Zendesk notifications are sent to this address.
+
+Zendesk notifcations are sent in the form:
+
+	From: "Updater Name" <notifications-help@pebbleit.zendesk.com>
+	Reply-To: "pebble.it help!" <help+idXXXX-XXXX@pebbleit.zendesk.com>
+
+To update a ticket, Foration send email updates in the form (must be sent to the corresponding Reply-To address):
+
+	From: pebbleit@foration.com
+	To:  help+idXXXX-XXXX@pebbleit.zendesk.com
+
+The message body can contain ticket property updates and/or comments, as described by the [Zendesk Mail API](https://support.zendesk.com/entries/21543427).
 
 ## Ticket assignment
 
