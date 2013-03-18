@@ -1,12 +1,12 @@
 # Agent notifications
 
-A list of email nofitications an Agent might receive from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
+A list of email nofitications an `Agent` might receive from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
 
 ## New tickets
 
-### Notify group of assignment
+### Notify Group of assignment
 
-Most likely the first email notification Agents see for a new ticket (client Organisations are mapped to a Group, usually Support). Each Agent in the Group recieves a copy of this notice.
+Most likely the first email notification an `Agent` receives for a new ticket (`Requester` or their `Organisation` should be mapped to a `Group`, usually `Support`). Each `Agent` in the `Group` recieves a copy of this notice.
 
 Email subject:
 
@@ -21,11 +21,11 @@ Email body:
 	
 	{{ticket.comments_formatted}}
 
-### Notify all agents of received request
+### Notify all Agents of received request
 
-The first email notification Agents see for a new ticket when the Requester or their Organisation is not mapped to a Group.
+The first email notification an `Agent` receives for a new ticket not assigned to a `Group` (`Requester` or their `Organisation` is not mapped to a `Group`).
 
-This only is sent to _non-restricted_ Agents (i.e. all pebble.it agents currently)
+Sent to `Non-restricted Agents` only (currently all pebble.it Agents).
 
 Email subject:
 
@@ -42,9 +42,9 @@ Email body:
 
 ##  Ticket assignment
 
-### Notify assignee of assignment
+### Notify Assignee of assignment
 
-To inform Agent he is assigned a ticket. Not triggered when an Agent ‘takes’ a ticket (assigns to self). All come
+To inform `Agent` he is assigned a ticket. Not triggered when an `Agent` assigns a ticket to himself.
 
 Email subject:
 
@@ -63,7 +63,7 @@ Email body:
 
 ### Notify assignee of comment update
 
-Informs Agent of a new comment (public or private) added to their ticket. Will not trigger on the Agent’s own updates, or for ‘reopens’ (seperate Trigger, below).
+Informs `Agent` of a new comment (public or private) added to their ticket. Will not trigger for the `Agent`’s own updates, or for ‘reopens’ (seperate notification, below).
 
 Email subject:
 
@@ -80,7 +80,7 @@ Email subject:
 
 ## Ticket reopened
 
-Informs Agent their ticket has been reopened (any Status change from Solved, other that Closed). Will not trigger if the Agent reopens their own ticket.
+Informs `Agent` their ticket has been reopened (any `Status` change from `Solved`, other that `Closed`). Will not trigger if the `Agent` reopens their own ticket.
 
 Email subject:
 
