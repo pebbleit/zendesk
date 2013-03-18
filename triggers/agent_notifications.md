@@ -40,11 +40,11 @@ Email body:
 	
 	{{ticket.comments_formatted}}
 
-##  Ticket assignment
+## Ticket assignment
 
 ### Notify Assignee of assignment
 
-To inform `Agent` he is assigned a ticket. Not triggered when an `Agent` assigns a ticket to himself.
+To inform `Agent` he is assigned a ticket. Not triggered on self-assigment.
 
 Email subject:
 
@@ -79,6 +79,8 @@ Email subject:
 	{{ticket.latest_comment_formatted}}
 
 ## Ticket reopened
+
+### Notify assignee of reopened ticket
 
 Informs `Agent` their ticket has been reopened (any `Status` change from `Solved`, other that `Closed`). Will not trigger if the `Agent` reopens their own ticket.
 
