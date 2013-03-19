@@ -9,7 +9,7 @@ Zendesk notifcations are sent in the form:
 	From: "Updater Name" <notifications-help@pebbleit.zendesk.com>
 	Reply-To: "pebble.it help!" <help+idXXXX-XXXX@pebbleit.zendesk.com>
 
-To update a ticket, Foration send email updates in the form (must be sent to the corresponding Reply-To address):
+To update a ticket, Foration send email updates in the form (**must** be sent to the corresponding Reply-To address):
 
 	From: pebbleit@foration.com
 	To:  help+idXXXX-XXXX@pebbleit.zendesk.com
