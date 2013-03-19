@@ -82,7 +82,7 @@ Email subject:
 
 ### Notify assignee of reopened ticket
 
-Informs `Agent` their ticket has been reopened (any `Status` change from `Solved`, other that `Closed`). Will not trigger if the `Agent` reopens their own ticket.
+Informs `Agent` their ticket has been reopened (any `Status` change from `Solved`, other than `Closed`). Will not trigger if the `Agent` reopens their own ticket.
 
 Email subject:
 

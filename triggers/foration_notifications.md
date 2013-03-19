@@ -85,7 +85,7 @@ Email subject:
 
 ### Notify Foration of reopened ticket
 
-Informs Foration their ticket has been reopened (any `Status` change from `Solved`, other that `Closed`). Will not trigger if the Foration reopen their own ticket.
+Informs Foration their ticket has been reopened (any `Status` change from `Solved`, other than `Closed`). Will not trigger if the Foration reopen their own ticket.
 
 Email subject:
 
