@@ -1,6 +1,6 @@
-# Agent notifications
+# Standard Agent notifications
 
-A list of email nofitications an `Agent` might receive from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
+A list of [triggered](https://support.zendesk.com/entries/20011606) email nofitications an `Agent` might receive from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
 
 ## New tickets
 
