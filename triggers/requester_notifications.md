@@ -10,7 +10,7 @@ Informs `Requester` a ticket has been created in Zendesk. Any method (email, web
 
 Email subject:
 
-	Request received: {{ticket.title}}
+	[{{ticket.account}}] Request received: {{ticket.title}}
 
 Email body:
 

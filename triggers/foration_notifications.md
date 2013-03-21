@@ -2,7 +2,7 @@
 
 A list of [triggered](https://support.zendesk.com/entries/20011606) email nofitications Foration might receive from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
 
-##Intro
+## Primer
 
 The Foration Zendesk `Agent` has the email address [pebble@foration.com](mailto:pebbleit@foration.com) – all Zendesk notifications are sent to this address.
 

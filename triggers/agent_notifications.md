@@ -4,7 +4,7 @@ A list of [triggered](https://support.zendesk.com/entries/20011606) email nofiti
 
 ## New tickets
 
-### Notify Group of assignment
+### Notify group of assignment
 
 Most likely the first email notification an `Agent` receives for a new ticket (`Requester` or their `Organisation` should be mapped to a `Group`, usually `Support`). Each `Agent` in the `Group` recieves a copy of this notice.
 
@@ -14,14 +14,14 @@ Email subject:
 
 Email body:
 
-	This ticket (#{{ticket.id}}) has been assigned to group '{{ticket.group.name}}', of which you are a member. 
+	This ticket (#{{ticket.id}}) has been assigned to group '{{ticket.group.name}}', of which you are a member.
 	
 	To review the status of the ticket, follow the link below:
-	http://{{ticket.url}}
+	{{ticket.url_with_protocol}}
 	
 	{{ticket.comments_formatted}}
 
-### Notify all Agents of received request
+### Notify all agents of received request
 
 The first email notification an `Agent` receives for a new ticket not assigned to a `Group` (`Requester` or their `Organisation` is not mapped to a `Group`).
 
@@ -36,13 +36,13 @@ Email body:
 	A ticket (#{{ticket.id}}) by {{ticket.requester.name}} has been received. Is is unassigned.
 	
 	Review it by following the link below:
-	http://{{ticket.url}}
+	{{ticket.url_with_protocol}}
 	
 	{{ticket.comments_formatted}}
 
 ## Ticket assignment
 
-### Notify Assignee of assignment
+### Notify assignee of assignment
 
 To inform `Agent` he is assigned a ticket. Not triggered on self-assigment.
 
@@ -55,7 +55,7 @@ Email body:
 	You have been assigned to this ticket (#{{ticket.id}}).
 	
 	To review the status of the ticket and add updates, follow the link below:
-	http://{{ticket.url}}
+	{{ticket.url_with_protocol}}
 	
 	{{ticket.comments_formatted}}
 
@@ -74,7 +74,7 @@ Email subject:
 	This ticket (#{{ticket.id}}) has been updated.
 	
 	To review the status of this ticket and add updates, follow the link below:
-	http://{{ticket.url}}
+	{{ticket.url_with_protocol}}
 	
 	{{ticket.latest_comment_formatted}}
 
@@ -93,6 +93,6 @@ Email body:
 	This ticket (#{{ticket.id}}) has been reopened.
 	
 	To review the status of this ticket and add updates, follow the link below:
-	http://{{ticket.url}}
+	{{ticket.url_with_protocol}}
 	
 	{{ticket.comments_formatted}}
