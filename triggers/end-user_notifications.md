@@ -1,6 +1,6 @@
-# Standard Requester notifications
+# Standard End-User notifications
 
-A list of [triggered](https://support.zendesk.com/entries/20011606) email nofitications a client/customer/end-user (the `Requester`) receives from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
+A list of [triggered](https://support.zendesk.com/entries/20011606) email nofitications a client/customer (the `Requester`) receives from **[pebble.it help!](http://help.pebbleit.com)**. See the [Zendesk data object (placeholders) reference](https://support.zendesk.com/entries/20203943) and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) for help with the markup.
 
 ## Ticket received
 
